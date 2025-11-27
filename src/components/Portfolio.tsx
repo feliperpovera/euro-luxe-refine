@@ -7,21 +7,21 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     image: interiorBedroom,
-    title: "Residencia Privada",
-    category: "Estuco Veneciano",
-    description: "Suite principal con acabados en tonos cálidos que crean una atmósfera de serenidad y lujo.",
+    title: "Private Residence",
+    category: "Venetian Plaster",
+    description: "Master suite with warm-toned finishes that create an atmosphere of serenity and luxury.",
   },
   {
     image: interiorLiving,
-    title: "Penthouse Moderno",
+    title: "Modern Penthouse",
     category: "Marmorino",
-    description: "Espacios sociales con acabado marmóreo que refleja la luz natural de forma espectacular.",
+    description: "Social spaces with marble finish that reflects natural light in spectacular fashion.",
   },
   {
     image: interiorDining,
-    title: "Villa Clásica",
-    category: "Restauración",
-    description: "Recuperación de acabados históricos en comedor formal de residencia patrimonial.",
+    title: "Classic Villa",
+    category: "Restoration",
+    description: "Recovery of historic finishes in formal dining room of heritage residence.",
   },
 ];
 
@@ -33,11 +33,11 @@ const Portfolio = () => {
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-3">Portfolio</p>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Proyectos Destacados
+            Featured Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Una selección de nuestros trabajos más exclusivos que demuestran 
-            nuestra pasión por la perfección y el detalle artesanal.
+            A selection of our most exclusive works that demonstrate 
+            our passion for perfection and artisanal detail.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ const Portfolio = () => {
                   variant="link"
                   className="text-primary p-0 mt-4 hover:text-gold-light"
                 >
-                  Ver Proyecto <ArrowRight className="w-4 h-4 ml-1" />
+                  View Project <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Portfolio = () => {
         {/* CTA */}
         <div className="text-center">
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-gold-glow">
-            Ver Todos los Proyectos
+            View All Projects
           </Button>
         </div>
       </div>

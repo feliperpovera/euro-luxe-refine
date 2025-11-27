@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Inicio", href: "#inicio" },
-    { name: "Servicios", href: "#servicios" },
+    { name: "Home", href: "#home" },
+    { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Nosotros", href: "#nosotros" },
+    { name: "About", href: "#about" },
   ];
 
   return (
@@ -39,7 +39,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Phone className="w-4 h-4 mr-2" />
-              Contactar
+              Contact Us
             </Button>
           </div>
 
@@ -68,7 +68,7 @@ const Header = () => {
               ))}
               <Button variant="outline" size="sm" className="w-fit border-primary text-primary">
                 <Phone className="w-4 h-4 mr-2" />
-                Contactar
+                Contact Us
               </Button>
             </div>
           </nav>

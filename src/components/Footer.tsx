@@ -14,14 +14,14 @@ const Footer = () => {
               European Luxury Wall Finishes
             </p>
             <p className="text-muted-foreground text-sm max-w-md">
-              Transformamos espacios con acabados artesanales de la más alta calidad. 
-              Técnicas europeas tradicionales para proyectos exclusivos.
+              Transforming spaces with the highest quality artisanal finishes. 
+              Traditional European techniques for exclusive projects.
             </p>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Contacto</h4>
+            <h4 className="text-foreground font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
               <a href="tel:+1234567890" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4" />
@@ -40,19 +40,19 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Enlaces</h4>
+            <h4 className="text-foreground font-semibold mb-4">Quick Links</h4>
             <div className="space-y-3">
-              <a href="#inicio" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Inicio
+              <a href="#home" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+                Home
               </a>
-              <a href="#servicios" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Servicios
+              <a href="#services" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+                Services
               </a>
               <a href="#portfolio" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Portfolio
               </a>
-              <a href="#nosotros" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Nosotros
+              <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+                About Us
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 European Luxury Wall Finishes. Todos los derechos reservados.
+            © 2024 European Luxury Wall Finishes. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
