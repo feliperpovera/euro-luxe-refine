@@ -3,39 +3,39 @@ import { Palette, Sparkles, Shield, Award } from "lucide-react";
 const services = [
   {
     icon: Palette,
-    title: "Estuco Veneciano",
-    description: "Técnica tradicional italiana que crea superficies lisas y brillantes con efecto mármol natural.",
+    title: "Venetian Plaster",
+    description: "Traditional Italian technique creating smooth, glossy surfaces with a natural marble effect.",
   },
   {
     icon: Sparkles,
     title: "Marmorino",
-    description: "Acabado artesanal con polvo de mármol que otorga elegancia atemporal a cualquier espacio.",
+    description: "Artisanal finish with marble powder that brings timeless elegance to any space.",
   },
   {
     icon: Shield,
-    title: "Texturas Decorativas",
-    description: "Acabados personalizados con relieves y patrones únicos para crear ambientes distintivos.",
+    title: "Decorative Textures",
+    description: "Custom finishes with unique reliefs and patterns to create distinctive environments.",
   },
   {
     icon: Award,
-    title: "Restauración",
-    description: "Recuperamos y preservamos acabados históricos con técnicas tradicionales europeas.",
+    title: "Restoration",
+    description: "We recover and preserve historic finishes using traditional European techniques.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="servicios" className="py-24 bg-card">
+    <section id="services" className="py-24 bg-card">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-3">Nuestros Servicios</p>
+          <p className="text-primary font-medium mb-3">Our Services</p>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Artesanía de Alto Nivel
+            High-Level Craftsmanship
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Cada proyecto es una obra de arte. Utilizamos materiales premium importados 
-            de Europa y técnicas transmitidas por generaciones de maestros artesanos.
+            Every project is a work of art. We use premium materials imported 
+            from Europe and techniques passed down through generations of master artisans.
           </p>
         </div>
 
