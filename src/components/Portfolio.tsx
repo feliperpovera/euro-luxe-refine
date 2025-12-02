@@ -6,8 +6,6 @@ import metallicFinishes from "@/assets/metallic-finishes.jpg";
 import customFeatureWalls from "@/assets/custom-feature-walls.jpg";
 import decorativeWallPanels from "@/assets/decorative-wall-panels.jpg";
 import designerTextureMatch from "@/assets/designer-texture-match.jpg";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -106,12 +104,6 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-gold-glow">
-            View All Projects
-          </Button>
-        </div>
       </div>
     </section>
   );
