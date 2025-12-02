@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.webp";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,8 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">ELW</span>
-            <span className="hidden sm:block text-sm text-muted-foreground">European Luxury</span>
+          <a href="#" className="flex items-center">
+            <img src={logo} alt="European Luxury Wall Finishes" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
