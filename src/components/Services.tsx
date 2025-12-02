@@ -1,25 +1,45 @@
-import { Palette, Sparkles, Shield, Award } from "lucide-react";
+import { Palette, Droplets, Sun, Building2, Sparkles, LayoutGrid, Layers, Blend } from "lucide-react";
 
 const services = [
   {
     icon: Palette,
     title: "Venetian Plaster",
-    description: "Traditional Italian technique creating smooth, glossy surfaces with a natural marble effect.",
+    description: "Multi-layered Italian technique creating lustrous, marble-like surfaces with incredible depth.",
+  },
+  {
+    icon: Droplets,
+    title: "Marmorino & Tadelakt",
+    description: "Refined marble dust finish and waterproof Moroccan lime plaster for elegant, durable surfaces.",
+  },
+  {
+    icon: Sun,
+    title: "Lime Wash",
+    description: "Breathable, eco-friendly finish with soft chalky surfaces and beautiful natural variations.",
+  },
+  {
+    icon: Building2,
+    title: "Faux Concrete",
+    description: "Raw urban aesthetic of industrial concrete without the weight, perfect for modern spaces.",
   },
   {
     icon: Sparkles,
-    title: "Marmorino",
-    description: "Artisanal finish with marble powder that brings timeless elegance to any space.",
+    title: "Metallic Finishes",
+    description: "Glamorous copper, gold, silver, or bronze surfaces that add dramatic sophistication.",
   },
   {
-    icon: Shield,
-    title: "Decorative Textures",
-    description: "Custom finishes with unique reliefs and patterns to create distinctive environments.",
+    icon: LayoutGrid,
+    title: "Custom Feature Walls",
+    description: "Bespoke artistic treatments that transform walls into stunning focal points.",
   },
   {
-    icon: Award,
-    title: "Restoration",
-    description: "We recover and preserve historic finishes using traditional European techniques.",
+    icon: Layers,
+    title: "Decorative Wall Panels",
+    description: "Sculptural installations with geometric or organic patterns adding architectural depth.",
+  },
+  {
+    icon: Blend,
+    title: "Designer Texture Match",
+    description: "Expert color and texture matching to seamlessly integrate with existing design elements.",
   },
 ];
 
@@ -40,17 +60,17 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group p-8 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-all duration-500 hover-gold-glow"
+              className="group p-6 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-all duration-500 hover-gold-glow"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-7 h-7 text-primary" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-serif font-semibold text-foreground mb-2">
                 {service.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
