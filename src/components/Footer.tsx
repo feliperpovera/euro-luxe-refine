@@ -19,20 +19,20 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Contact</h4>
+            <h4 className="text-foreground font-semibold mb-4">Fort Lauderdale Studio</h4>
             <div className="space-y-3">
-              <a href="tel:+1234567890" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
-                <Phone className="w-4 h-4" />
-                +1 (234) 567-890
-              </a>
-              <a href="mailto:info@elwfinishes.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
-                <Mail className="w-4 h-4" />
-                info@elwfinishes.com
-              </a>
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>123 Luxury Avenue, Miami, FL 33101</span>
+                <span>2800 Weston Road, Suite 204<br />Weston, FL 33331</span>
               </div>
+              <a href="tel:+19547028079" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Phone className="w-4 h-4" />
+                +1 (954) 702-8079
+              </a>
+              <a href="mailto:info@europeanluxurywallfinishes.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Mail className="w-4 h-4" />
+                info@europeanluxurywallfinishes.com
+              </a>
             </div>
           </div>
 
