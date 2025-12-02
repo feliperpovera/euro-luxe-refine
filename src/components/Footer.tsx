@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 const Footer = () => {
   return (
@@ -7,12 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-3xl font-serif font-bold text-primary">ELW</span>
+            <div className="mb-4">
+              <img src={logo} alt="European Luxury Wall Finishes" className="h-20 w-auto" />
             </div>
-            <p className="text-foreground font-serif text-xl mb-2">
-              European Luxury Wall Finishes
-            </p>
             <p className="text-muted-foreground text-sm max-w-md">
               Transforming spaces with the highest quality artisanal finishes. 
               Traditional European techniques for exclusive projects.
