@@ -2,6 +2,7 @@ import interiorBedroom from "@/assets/interior-bedroom.jpg";
 import interiorLiving from "@/assets/interior-living.jpg";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const features = [
   "30+ years of experience",
@@ -72,9 +73,11 @@ const About = () => {
               ))}
             </div>
 
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Request a Quote
-            </Button>
+            <ContactFormDialog>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Request a Quote
+              </Button>
+            </ContactFormDialog>
           </div>
         </div>
       </div>
