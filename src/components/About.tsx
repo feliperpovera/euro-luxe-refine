@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
 const features = [
-  "Over 20 years of experience",
-  "Premium European materials",
-  "Authentic artisanal techniques",
-  "Satisfaction guaranteed",
+  "30+ years of experience",
+  "UK-trained master artisan",
+  "Traditional European techniques",
+  "Based in South Florida",
 ];
 
 const About = () => {
@@ -21,20 +21,20 @@ const About = () => {
               <div className="overflow-hidden rounded-lg">
                 <img
                   src={interiorBedroom}
-                  alt="Bedroom with luxury wall finishes"
+                  alt="Luxury wall finish by Mark Bilner"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="bg-primary p-6 rounded-lg text-center">
-                <span className="text-4xl font-serif font-bold text-primary-foreground">500+</span>
-                <p className="text-primary-foreground/80 text-sm mt-1">Projects Completed</p>
+                <span className="text-4xl font-serif font-bold text-primary-foreground">30+</span>
+                <p className="text-primary-foreground/80 text-sm mt-1">Years Experience</p>
               </div>
             </div>
             <div className="pt-8">
               <div className="overflow-hidden rounded-lg">
                 <img
                   src={interiorLiving}
-                  alt="Living room with Venetian finishes"
+                  alt="Venetian plaster finish"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -44,19 +44,22 @@ const About = () => {
           {/* Content */}
           <div>
             <p className="text-primary font-medium mb-3">About Us</p>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
-              Excellence in Every Detail
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+              Mark Bilner
             </h2>
+            <p className="text-primary font-medium mb-6">
+              UK-Trained Master Artisan | 30+ Years of Experience
+            </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              European Luxury Wall Finishes is a leader in high-end decorative finishes. 
-              Our team of certified artisans transforms ordinary spaces into 
-              interior design masterpieces, combining traditional European techniques 
-              with contemporary innovation.
+              Born and trained in England, Mark Bilner is a professional builder and master of 
+              Venetian plaster and luxury wall finishes. With over three decades of expertise, 
+              Mark combines traditional European techniques with modern elegance.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              We work with architects, designers, and discerning homeowners who seek 
-              to create unique and sophisticated environments. Each project is an expression of 
-              timeless elegance.
+              From high-gloss marble textures to subtle matte lime washes, Mark's work has graced 
+              luxury interiors across Washington D.C., Miami, Naples, Tampa, Daytona Beach, and 
+              the Florida Panhandle. Every project is approached with precision, care, and a deep 
+              respect for old-world artistry.
             </p>
 
             {/* Features */}
@@ -70,7 +73,7 @@ const About = () => {
             </div>
 
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Learn More
+              Request a Quote
             </Button>
           </div>
         </div>
