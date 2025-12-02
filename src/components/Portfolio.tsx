@@ -1,27 +1,27 @@
-import interiorBedroom from "@/assets/interior-bedroom.jpg";
-import interiorLiving from "@/assets/interior-living.jpg";
-import interiorDining from "@/assets/interior-dining.jpg";
+import grasselloDiCalce from "@/assets/grassello-di-calce.jpg";
+import oldWorldMarmorino from "@/assets/old-world-marmorino.jpg";
+import concreteEffect from "@/assets/concrete-effect.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    image: interiorBedroom,
-    title: "Private Residence",
-    category: "Venetian Plaster",
-    description: "Master suite with warm-toned finishes that create an atmosphere of serenity and luxury.",
+    image: grasselloDiCalce,
+    title: "Grassello Di Calce",
+    category: "Italian Lime Plaster",
+    description: "An ancient Italian lime plaster technique dating back to Roman times. Made from aged slaked lime, it creates an exceptionally smooth, polished finish with a subtle luminosity. The natural material allows walls to breathe while providing a timeless, elegant appearance with soft, warm undertones.",
   },
   {
-    image: interiorLiving,
-    title: "Modern Penthouse",
-    category: "Marmorino",
-    description: "Social spaces with marble finish that reflects natural light in spectacular fashion.",
+    image: oldWorldMarmorino,
+    title: "Old World Marmorino",
+    category: "Venetian Marble Plaster",
+    description: "A traditional Venetian plaster crafted from crushed marble and aged lime putty. This technique produces a stone-like texture with remarkable depth and natural variation. Applied in multiple thin layers and burnished to perfection, it captures the essence of Old World European craftsmanship.",
   },
   {
-    image: interiorDining,
-    title: "Classic Villa",
-    category: "Restoration",
-    description: "Recovery of historic finishes in formal dining room of heritage residence.",
+    image: concreteEffect,
+    title: "Concrete Effect",
+    category: "Modern Industrial Finish",
+    description: "A contemporary decorative finish that replicates the raw, urban aesthetic of industrial concrete. This technique creates sophisticated surfaces with subtle tonal variations and an authentic cement appearance, perfect for modern minimalist interiors and urban loft designs.",
   },
 ];
 
