@@ -1,6 +1,7 @@
 import heroImage from "@/assets/hero-interior.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Hero = () => {
   return (
@@ -36,9 +37,11 @@ const Hero = () => {
               Explore Projects
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground/10">
-              Request a Quote
-            </Button>
+            <ContactFormDialog>
+              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground/10">
+                Request a Quote
+              </Button>
+            </ContactFormDialog>
           </div>
         </div>
       </div>

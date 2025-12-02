@@ -3,6 +3,7 @@ import { Menu, X, Phone, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import logo from "@/assets/logo.webp";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,10 +51,12 @@ const Header = () => {
             >
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Phone className="w-4 h-4 mr-2" />
-              Contact Us
-            </Button>
+            <ContactFormDialog>
+              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Phone className="w-4 h-4 mr-2" />
+                Contact Us
+              </Button>
+            </ContactFormDialog>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,10 +91,12 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="outline" size="sm" className="w-fit border-primary text-primary">
-                <Phone className="w-4 h-4 mr-2" />
-                Contact Us
-              </Button>
+              <ContactFormDialog>
+                <Button variant="outline" size="sm" className="w-fit border-primary text-primary">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Contact Us
+                </Button>
+              </ContactFormDialog>
             </div>
           </nav>
         )}
