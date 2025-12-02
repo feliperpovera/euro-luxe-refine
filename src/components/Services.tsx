@@ -1,44 +1,59 @@
-import { Palette, Droplets, Sun, Building2, Sparkles, LayoutGrid, Layers, Blend } from "lucide-react";
+import venetianPlaster from "@/assets/venetian-plaster.jpg";
+import marmorinoTadelakt from "@/assets/marmorino-tadelakt.jpg";
+import limeWash from "@/assets/lime-wash.jpg";
+import fauxConcrete from "@/assets/faux-concrete.jpg";
+import metallicFinishes from "@/assets/metallic-finishes.jpg";
+import customFeatureWalls from "@/assets/custom-feature-walls.jpg";
+import decorativeWallPanels from "@/assets/decorative-wall-panels.jpg";
+import designerTextureMatch from "@/assets/designer-texture-match.jpg";
 
 const services = [
   {
-    icon: Palette,
+    image: venetianPlaster,
     title: "Venetian Plaster",
+    category: "Classic Italian Finish",
     description: "Multi-layered Italian technique creating lustrous, marble-like surfaces with incredible depth.",
   },
   {
-    icon: Droplets,
+    image: marmorinoTadelakt,
     title: "Marmorino & Tadelakt",
+    category: "Mediterranean Elegance",
     description: "Refined marble dust finish and waterproof Moroccan lime plaster for elegant, durable surfaces.",
   },
   {
-    icon: Sun,
+    image: limeWash,
     title: "Lime Wash",
+    category: "Natural Mineral Finish",
     description: "Breathable, eco-friendly finish with soft chalky surfaces and beautiful natural variations.",
   },
   {
-    icon: Building2,
+    image: fauxConcrete,
     title: "Faux Concrete",
+    category: "Industrial Modern",
     description: "Raw urban aesthetic of industrial concrete without the weight, perfect for modern spaces.",
   },
   {
-    icon: Sparkles,
+    image: metallicFinishes,
     title: "Metallic Finishes",
+    category: "Luxurious Shimmer",
     description: "Glamorous copper, gold, silver, or bronze surfaces that add dramatic sophistication.",
   },
   {
-    icon: LayoutGrid,
+    image: customFeatureWalls,
     title: "Custom Feature Walls",
+    category: "Statement Design",
     description: "Bespoke artistic treatments that transform walls into stunning focal points.",
   },
   {
-    icon: Layers,
+    image: decorativeWallPanels,
     title: "Decorative Wall Panels",
+    category: "3D Texture Design",
     description: "Sculptural installations with geometric or organic patterns adding architectural depth.",
   },
   {
-    icon: Blend,
+    image: designerTextureMatch,
     title: "Designer Texture Match",
+    category: "Custom Matching",
     description: "Expert color and texture matching to seamlessly integrate with existing design elements.",
   },
 ];
@@ -61,21 +76,30 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
               key={service.title}
-              className="group p-6 bg-secondary rounded-lg border border-border hover:border-primary/50 transition-all duration-500 hover-gold-glow"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group bg-secondary rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover-gold-glow"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-6 h-6 text-primary" />
+              <div className="relative overflow-hidden aspect-[4/3]">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <h3 className="text-lg font-serif font-semibold text-foreground mb-2">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
-              </p>
+              <div className="p-5">
+                <span className="text-primary text-xs font-medium uppercase tracking-wider">
+                  {service.category}
+                </span>
+                <h3 className="text-lg font-serif font-semibold text-foreground mt-2 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
