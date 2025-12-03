@@ -1,7 +1,6 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "npm:resend@2.0.0";
 
-const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -17,7 +16,6 @@ interface ContactFormRequest {
 }
 
 const handler = async (req: Request): Promise<Response> => {
-  // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -27,22 +25,35 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Received contact form submission:", { name, phone, email });
 
-    // Send notification email to business owner
-    const emailResponse = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: ["tu-correo@ejemplo.com"], // CAMBIAR POR TU CORREO REAL
-      subject: `Nueva consulta de ${name}`,
-      html: `
-        <h2>Nueva consulta desde el formulario de contacto</h2>
-        <p><strong>Nombre:</strong> ${name}</p>
-        <p><strong>Teléfono:</strong> ${phone}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Mensaje:</strong></p>
-        <p>${message}</p>
-      `,
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+      },
+      body: JSON.stringify({
+        from: "Contact Form <onboarding@resend.dev>",
+        to: ["TU-CORREO@EJEMPLO.COM"], // CAMBIAR POR TU CORREO REAL
+        subject: `Nueva consulta de ${name}`,
+        html: `
+          <h2>Nueva consulta desde el formulario de contacto</h2>
+          <p><strong>Nombre:</strong> ${name}</p>
+          <p><strong>Teléfono:</strong> ${phone}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Mensaje:</strong></p>
+          <p>${message}</p>
+        `,
+      }),
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    if (!res.ok) {
+      const error = await res.text();
+      console.error("Resend API error:", error);
+      throw new Error(error);
+    }
+
+    const data = await res.json();
+    console.log("Email sent successfully:", data);
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
