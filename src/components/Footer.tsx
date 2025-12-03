@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
 import logo from "@/assets/logo.webp";
 
 const Footer = () => {
@@ -59,11 +59,17 @@ const Footer = () => {
             © 2024 European Luxury Wall Finishes. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/company/european-luxury-wall-finishes/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="https://www.instagram.com/europeanluxurywallfinishes?igsh=eGdwaWwwYWhuc3V6" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/share/1Cj3pWXudQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <Facebook className="w-5 h-5" />
+            </a>
+            <a href="https://youtube.com/@europeanluxurywallfinishes?si=wttr2R_GezxOUKjU" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Youtube className="w-5 h-5" />
             </a>
           </div>
         </div>
