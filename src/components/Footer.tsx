@@ -46,9 +46,6 @@ const Footer = () => {
               <a href="#services" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Services
               </a>
-              <a href="#portfolio" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Portfolio
-              </a>
               <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 About Us
               </a>
