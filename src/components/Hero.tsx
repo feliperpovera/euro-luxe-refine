@@ -33,7 +33,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <ContactFormDialog>
-              <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground/10">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-gold-glow">
                 Request a Quote
               </Button>
             </ContactFormDialog>
