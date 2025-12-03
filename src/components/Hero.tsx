@@ -1,6 +1,5 @@
 import heroImage from "@/assets/hero-interior.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Hero = () => {
@@ -33,12 +32,6 @@ const Hero = () => {
             for exclusive projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <a href="#portfolio">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-gold-glow">
-                Explore Projects
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
             <ContactFormDialog>
               <Button variant="outline" size="lg" className="border-foreground/20 text-foreground hover:bg-foreground/10">
                 Request a Quote
