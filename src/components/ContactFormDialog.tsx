@@ -99,8 +99,8 @@ const ContactFormDialog = ({ children }: ContactFormDialogProps) => {
       if (error) throw error;
 
       toast({
-        title: "¡Mensaje enviado!",
-        description: "Nos pondremos en contacto contigo pronto.",
+        title: "Message sent!",
+        description: "We'll get back to you soon.",
       });
 
       setFormData({ name: "", phone: "", email: "", message: "" });
@@ -108,7 +108,7 @@ const ContactFormDialog = ({ children }: ContactFormDialogProps) => {
     } catch (error) {
       toast({
         title: "Error",
-        description: "No se pudo enviar el mensaje. Intenta de nuevo.",
+        description: "Could not send the message. Please try again.",
         variant: "destructive",
       });
     } finally {
