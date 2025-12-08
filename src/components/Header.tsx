@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo.png";
 import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Header = () => {
