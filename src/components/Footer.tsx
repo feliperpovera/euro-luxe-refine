@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <img src={logo} alt="European Luxury Wall Finishes" className="h-40 w-auto" />
+              <img src={logo} alt="European Luxury Wall Finishes" className="h-48 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm max-w-md">
               Transforming spaces with the highest quality artisanal finishes. 
