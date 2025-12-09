@@ -22,9 +22,8 @@ const Hero = () => {
             European Luxury Wall Finishes
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            We Define{" "}
-            <span className="text-gradient-gold">Elegance</span>{" "}
-            on Your Walls
+            Walls like{" "}
+            <span className="text-gradient-gold">no other</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-lg animate-fade-up" style={{ animationDelay: "0.3s" }}>
             Transforming spaces with artisanal Italian techniques and the highest 
