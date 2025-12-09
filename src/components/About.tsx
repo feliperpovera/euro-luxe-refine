@@ -1,5 +1,5 @@
-import interiorBedroom from "@/assets/interior-bedroom.jpg";
-import interiorLiving from "@/assets/interior-living.jpg";
+import guildLogo from "@/assets/guild-master-craftsmen.png";
+import markPhoto from "@/assets/mark-bilner.jpg";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import ContactFormDialog from "@/components/ContactFormDialog";
@@ -21,8 +21,8 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={interiorBedroom}
-                  alt="Luxury wall finish by Mark Bilner"
+                  src={markPhoto}
+                  alt="Mark Bilner - Master Artisan"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -32,11 +32,11 @@ const About = () => {
               </div>
             </div>
             <div className="pt-8">
-              <div className="overflow-hidden rounded-lg">
+              <div className="overflow-hidden rounded-lg bg-background p-4 flex items-center justify-center">
                 <img
-                  src={interiorLiving}
-                  alt="Venetian plaster finish"
-                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                  src={guildLogo}
+                  alt="Guild of Master Craftsmen"
+                  className="w-full h-72 object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
