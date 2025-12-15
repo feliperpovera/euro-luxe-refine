@@ -1,60 +1,60 @@
-import venetianPlaster from "@/assets/venetian-plaster.jpg";
+import grasselloDiCalce from "@/assets/grassello-di-calce.jpg";
 import marmorinoTadelakt from "@/assets/marmorino-tadelakt.jpg";
 import limeWash from "@/assets/lime-wash.jpg";
 import fauxConcrete from "@/assets/faux-concrete.jpg";
 import metallicFinishes from "@/assets/metallic-finishes.jpg";
-import customFeatureWalls from "@/assets/custom-feature-walls.jpg";
 import decorativeWallPanels from "@/assets/decorative-wall-panels.jpg";
+import customFeatureWalls from "@/assets/custom-feature-walls.jpg";
 import designerTextureMatch from "@/assets/designer-texture-match.jpg";
 
 const services = [
   {
-    image: venetianPlaster,
-    title: "Venetian Plaster",
+    image: grasselloDiCalce,
+    title: "Grassello",
     category: "Classic Italian Finish",
-    description: "Multi-layered Italian technique creating lustrous, marble-like surfaces with incredible depth.",
+    description: "Polished Italian plaster that creates smooth, marble-like surfaces with elegant depth—perfect for luxury interior wall finishes.",
   },
   {
     image: marmorinoTadelakt,
-    title: "Marmorino & Tadelakt",
+    title: "Marmorino",
     category: "Mediterranean Elegance",
-    description: "Refined marble dust finish and waterproof Moroccan lime plaster for elegant, durable surfaces.",
+    description: "Traditional lime-based Venetian finish offering refined texture, natural movement, and a high-end matte sheen ideal for exclusive spaces.",
   },
   {
     image: limeWash,
     title: "Lime Wash",
     category: "Natural Mineral Finish",
-    description: "Breathable, eco-friendly finish with soft chalky surfaces and beautiful natural variations.",
+    description: "Breathable, eco-friendly mineral coating delivering soft tonal variations and a timeless European aesthetic for premium walls.",
   },
   {
     image: fauxConcrete,
-    title: "Faux Concrete",
-    category: "Industrial Modern",
-    description: "Raw urban aesthetic of industrial concrete without the weight, perfect for modern spaces.",
+    title: "Microcement",
+    category: "Contemporary Seamless Look",
+    description: "Modern, seamless surface with high durability and a refined matte texture—ideal for bathrooms, kitchens, and luxury architectural designs.",
   },
   {
     image: metallicFinishes,
     title: "Metallic Finishes",
     category: "Luxurious Shimmer",
-    description: "Glamorous copper, gold, silver, or bronze surfaces that add dramatic sophistication.",
-  },
-  {
-    image: customFeatureWalls,
-    title: "Custom Feature Walls",
-    category: "Statement Design",
-    description: "Bespoke artistic treatments that transform walls into stunning focal points.",
+    description: "Copper, gold, silver, and bronze effects that add dramatic sophistication and shimmering depth to feature walls and high-end interiors.",
   },
   {
     image: decorativeWallPanels,
-    title: "Decorative Wall Panels",
-    category: "3D Texture Design",
-    description: "Sculptural installations with geometric or organic patterns adding architectural depth.",
+    title: "Bamboo Texture",
+    category: "Organic Texture Design",
+    description: "Nature-inspired textured finish that recreates the look of bamboo fibers, adding warmth, dimension, and artisanal character to any space.",
+  },
+  {
+    image: customFeatureWalls,
+    title: "Alligator Skin Effect",
+    category: "Artistic Statement Finish",
+    description: "Bold, embossed texture mimicking alligator skin for dramatic, high-impact feature walls in luxury residential and commercial projects.",
   },
   {
     image: designerTextureMatch,
-    title: "Designer Texture Match",
-    category: "Custom Matching",
-    description: "Expert color and texture matching to seamlessly integrate with existing design elements.",
+    title: "Custom Walls",
+    category: "Statement Design",
+    description: "Bespoke wall finishes handcrafted to suit your vision—combining Italian techniques, unique textures, and premium materials for luxury spaces.",
   },
 ];
 
