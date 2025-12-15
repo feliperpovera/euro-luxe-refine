@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Sun, Moon } from "lucide-react";
+import { Menu, X, Phone, Sun, Moon, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import logo from "@/assets/logo.png";
@@ -29,20 +29,29 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="text-base font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* CTA Button & Theme Toggle */}
+          {/* CTA Button, Social & Theme Toggle */}
           <div className="hidden md:flex items-center gap-4">
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-muted-foreground hover:text-primary transition-colors"
+              aria-label="YouTube"
+            >
+              <Youtube className="w-5 h-5" />
+            </a>
             <button
               onClick={toggleTheme}
               className="p-2 text-muted-foreground hover:text-primary transition-colors"
