@@ -3,7 +3,7 @@ import marmorinoTadelakt from "@/assets/marmorino-tadelakt.jpg";
 import limeWash from "@/assets/lime-wash.jpg";
 import fauxConcrete from "@/assets/faux-concrete.jpg";
 import metallicFinishes from "@/assets/metallic-finishes.jpg";
-import decorativeWallPanels from "@/assets/decorative-wall-panels.jpg";
+import decorativeWallPanels from "@/assets/bamboo-texture.png";
 import customFeatureWalls from "@/assets/alligator-skin.png";
 import designerTextureMatch from "@/assets/designer-texture-match.jpg";
 
