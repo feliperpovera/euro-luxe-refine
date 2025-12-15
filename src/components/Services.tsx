@@ -1,4 +1,4 @@
-import grasselloDiCalce from "@/assets/grassello-di-calce.jpg";
+import grasselloDiCalce from "@/assets/grassello-new.png";
 import marmorinoTadelakt from "@/assets/marmorino-tadelakt.jpg";
 import limeWash from "@/assets/lime-wash.jpg";
 import fauxConcrete from "@/assets/faux-concrete.jpg";
