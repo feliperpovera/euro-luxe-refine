@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-interior.jpg";
+import heroImage from "@/assets/hero-new.png";
 import { Button } from "@/components/ui/button";
 import ContactFormDialog from "@/components/ContactFormDialog";
 
