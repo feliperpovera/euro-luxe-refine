@@ -5,7 +5,7 @@ import fauxConcrete from "@/assets/faux-concrete.jpg";
 import metallicFinishes from "@/assets/metallic-finishes.jpg";
 import decorativeWallPanels from "@/assets/bamboo-texture.png";
 import customFeatureWalls from "@/assets/alligator-skin.png";
-import designerTextureMatch from "@/assets/designer-texture-match.jpg";
+import designerTextureMatch from "@/assets/custom-walls.png";
 
 const services = [
   {
