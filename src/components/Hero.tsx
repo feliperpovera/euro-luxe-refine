@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Luxurious interior with European wall finishes"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/30 to-transparent" />
       </div>
 
       {/* Content */}
