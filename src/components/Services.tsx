@@ -4,7 +4,7 @@ import limeWash from "@/assets/lime-wash.jpg";
 import fauxConcrete from "@/assets/faux-concrete.jpg";
 import metallicFinishes from "@/assets/metallic-finishes.jpg";
 import decorativeWallPanels from "@/assets/decorative-wall-panels.jpg";
-import customFeatureWalls from "@/assets/custom-feature-walls.jpg";
+import customFeatureWalls from "@/assets/alligator-skin.png";
 import designerTextureMatch from "@/assets/designer-texture-match.jpg";
 
 const services = [
