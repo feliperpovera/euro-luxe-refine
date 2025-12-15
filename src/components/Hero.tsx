@@ -26,9 +26,7 @@ const Hero = () => {
             <span className="text-gradient-gold">no other</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-lg animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            Transforming spaces with artisanal Italian techniques and the highest 
-            quality finishes. Venetian plaster, marmorino, and unique textures 
-            for exclusive projects.
+            Guided by an atelier tradition, our master artisan shapes spaces with Italian techniques. Venetian plaster, marmorino, and custom luxury wall textures crafted to deliver luxury like no other.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <ContactFormDialog>
