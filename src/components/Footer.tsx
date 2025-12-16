@@ -19,11 +19,11 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Fort Lauderdale Studio</h4>
+            <h4 className="text-foreground font-semibold mb-4">Daytona Beach Studio</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>2800 Weston Road, Suite 204<br />Weston, FL 33331</span>
+                <span>1799 N Williamson Blvd. # 1102<br />Daytona Beach, FL 32117</span>
               </div>
               <a href="tel:+19547028079" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4" />
