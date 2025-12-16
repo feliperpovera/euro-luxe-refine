@@ -44,7 +44,7 @@ const Header = () => {
           {/* CTA Button, Social & Theme Toggle */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@EuropeanLuxuryWallFinishes"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-primary transition-colors"
