@@ -1,5 +1,5 @@
 import grasselloDiCalce from "@/assets/grassello-ceiling.png";
-import marmorinoTadelakt from "@/assets/marmorino-new.png";
+import marmorinoTadelakt from "@/assets/marmorino-wall.png";
 import limeWash from "@/assets/lime-wash.jpg";
 import fauxConcrete from "@/assets/microcement.png";
 import metallicFinishes from "@/assets/metallic-finishes.jpg";
