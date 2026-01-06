@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -11,7 +12,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
@@ -50,7 +50,7 @@ const ContactFormDialog = ({ children }: ContactFormDialogProps) => {
   const [open, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
-  const { toast } = useToast();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
@@ -98,19 +98,11 @@ const ContactFormDialog = ({ children }: ContactFormDialogProps) => {
 
       if (error) throw error;
 
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you soon.",
-      });
-
       setFormData({ name: "", phone: "", email: "", message: "" });
       setOpen(false);
+      navigate("/thank-you");
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Could not send the message. Please try again.",
-        variant: "destructive",
-      });
+      setErrors({ message: "Could not send the message. Please try again." });
     } finally {
       setIsSubmitting(false);
     }
