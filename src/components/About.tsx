@@ -8,7 +8,7 @@ const features = [
   "30+ years of experience",
   "UK-trained master artisan",
   "Traditional European techniques",
-  "Based in South Florida",
+  "Based in North Florida",
 ];
 
 const About = () => {
